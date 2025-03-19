@@ -1,15 +1,32 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import ProductCard from "../components/ProductCard";
+import kurtka from '../assets/kurtka.jpeg'
 
 function Shop() {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    axios.get("https://backend/api/products")
-      .then((response) => setProducts(response.data))
-      .catch((error) => console.error("Ошибка загрузки:", error));
-  }, []);
+ const [products] = useState ([
+   {
+     id: 1,
+     name: "Winter Jacket",
+     image: kurtka,
+     price: 2500,
+     description: "Warm and comfortable winter jacket.",
+   },
+   {
+     id: 2,
+     name: "Winter Jacket",
+     image: kurtka,
+     price: 2500,
+     description: "Warm and comfortable winter jacket.",
+   },
+   {
+     id: 3,
+     name: "Winter Jacket",
+     image: kurtka,
+     price: 2500,
+     description: "Warm and comfortable winter jacket.",
+   },
+ ]);
 
   return (
     <main>
