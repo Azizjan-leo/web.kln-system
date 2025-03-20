@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import ProductCard from "../components/ProductCard";
 import kurtka from '../assets/kurtka.jpeg'
+import '../Styles/Shop.css'
 
 function Shop() {
  const [products] = useState ([
@@ -10,14 +11,14 @@ function Shop() {
      name: "Winter Jacket",
      image: kurtka,
      price: 2500,
-     description: "Warm and comfortable winter jacket.",
+     description: "Warm and comfortable winter jacketWarm m and comfortable winter jacketand comfortable winter jacketWarm and comfortable winter jacket.",
    },
    {
      id: 2,
      name: "Winter Jacket",
      image: kurtka,
      price: 2500,
-     description: "Warm and comfortable winter jacket.",
+     description: "Warm and comfortable winter jacketm and comfortable winter jacketm and comfortable winter jacket.",
    },
    {
      id: 3,
@@ -26,6 +27,52 @@ function Shop() {
      price: 2500,
      description: "Warm and comfortable winter jacket.",
    },
+   {
+    id: 3,
+    name: "Winter Jacket",
+    image: kurtka,
+    price: 2500,
+    description: "Warm and comfortable winter jacket.",
+  },
+  {
+    id: 3,
+    name: "Winter Jacket",
+    image: kurtka,
+    price: 2500,
+    description: "Warm and comfortable winter jacket.",
+  },
+  {
+    id: 3,
+    name: "Winter Jacket",
+    image: kurtka,
+    price: 2500,
+    description: "Warm and comfortable winter jacket.",
+  },
+  {
+    id: 3,
+    name: "Winter Jacket",
+    image: kurtka,
+    price: 2500,
+    description: "Warm and comfortable winter jacket.",
+  }, {
+    id: 3,
+    name: "Winter Jacket",
+    image: kurtka,
+    price: 2500,
+    description: "Warm and comfortable winter jacketarm and comfortable winter jacketarm and comfortable winter jacketarm and comfortable winter jacket.",
+  }, {
+    id: 3,
+    name: "Winter Jacket",
+    image: kurtka,
+    price: 2500,
+    description: "Warm and comfortable winter jacketarm and comfortable winter jacketarm and comfortable winter jacket.",
+  }, {
+    id: 3,
+    name: "Winter Jacket",
+    image: kurtka,
+    price: 2500,
+    description: "Warm and comfortable winter jacketarm and comfortable winter jacket.",
+  },
  ]);
 
   return (
