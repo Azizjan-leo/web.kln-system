@@ -29,5 +29,9 @@
     color: #cc5500; 
   }
 
+  .auth-buttons {
+    display: flex;
+    gap: 20px;
+  }
 
   

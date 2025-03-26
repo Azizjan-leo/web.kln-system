@@ -3,6 +3,92 @@
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 16px;
-    margin-bottom: 50px;
-    
-}
+    padding: 20px;
+  }
+  
+  /* Хедер с поиском и бургером */
+  .header2 {
+    position: relative;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0 20px;
+  }
+  
+  /* Обёртка для бургер-меню */
+  .hamburger-wrapper {
+    position: relative;
+  }
+  
+  /* Сам значок бургер-меню */
+  .hamburger-menu {
+    font-size: 2.8rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .hamburger-menu:hover {
+    color: #007bff;
+  }
+  
+  /* Стиль выпадающего меню справа */
+  .dropdown-right {
+    position: absolute;
+    top: -11px;
+    right: 120%; /* Сдвиг вправо от иконки бургера */
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 22px;
+    z-index: 20;
+    animation: fadeIn 0.3s ease;
+    min-width: 160px;
+  }
+  
+  
+  .dropdown-right a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .dropdown-right a:hover {
+    color: #ff8800;
+  }
+  
+  /* Поле поиска */
+  .search-input {
+    width: 50%;
+    max-width: 600px;
+    padding: 20px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #ff8800;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Анимация появления */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
