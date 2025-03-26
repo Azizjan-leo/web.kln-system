@@ -19,6 +19,8 @@ async function handleMessage(messageObj) {
     const messageText = messageObj.text;
     const chatId = messageObj.chat.id;
     const username = messageObj.chat.username;
+    const firstName = messageObj.chat.first_name;
+    const lastName = messageObj.chat.last_name;
 
     if (messageText.startsWith("/")) {
         const command = messageText.slice(1).toLowerCase();
@@ -29,7 +31,7 @@ async function handleMessage(messageObj) {
             case "shop":
                 return sendMessage(chatId, "🛍 Перейдите в магазин: https://frontend-react-p73rh2t2g-umars-projects-fa2018ce.vercel.app");
             case "kln":
-                return handleKLN(chatId, username);
+                return handleKLN(chatId, username, firstName, lastName);
             case "whatsapp":
             case "hey": 
                 return sendMessage(chatId, "Hey, ok I will add you (whatsapp man)");
