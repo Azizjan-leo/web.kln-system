@@ -2,25 +2,24 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import Basket from "./pages/Basket";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
+import Layout from "./components/Layout";
+import "./App.css";
 
 function App() {
   return (
-    <>
-      <Header />
+    <Layout>
       <Routes>
-        <Route path="/profile" element={<Profile/>} />
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login/>}/>
+        <Route path="/login" element={<Login />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/cart" element={<Basket />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
-      <Footer />
-    </>
+    </Layout>
   );
 }
 
 export default App;
+

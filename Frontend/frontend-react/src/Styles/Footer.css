@@ -1,12 +1,11 @@
 .footer {
     background: #222;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
-    position: relative;
-    bottom: 0;
     width: 100%;
   }
+  
   
   .footer-container {
     display: flex;

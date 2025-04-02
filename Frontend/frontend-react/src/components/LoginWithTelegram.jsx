@@ -22,10 +22,11 @@ function LoginWithTelegram() {
       window.location.href = "/profile";
     };
 
-    document.getElementById("tg-login")?.appendChild(script);
+    document.getElementById("tg-login").appendChild(script);
   }, []);
 
   return <div id="tg-login"></div>;
 }
 
 export default LoginWithTelegram;
+

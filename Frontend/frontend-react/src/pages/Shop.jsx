@@ -79,6 +79,23 @@ function Shop() {
       description: "Warm and comfortable winter jacketarm and comfortable winter jacket.",
     },
   ]);
+//   const [products, setProducts] = useState([]);
+// const [loading, setLoading] = useState(true);
+// const [error, setError] = useState(null);
+
+// useEffect(() => {
+//   axios.get("https://api.example.com/products")
+//     .then((res) => {
+//       setProducts(res.data);
+//       setLoading(false);
+//     })
+//     .catch((err) => {
+//       console.error("Ошибка при загрузке товаров:", err);
+//       setError("Не удалось загрузить товары.");
+//       setLoading(false);
+//     });
+// }, []);
+
 
   return (
     <main>
@@ -104,7 +121,7 @@ function Shop() {
       <div className="products">
         {products.map((product) => (
           <ProductCard
-            key={product.id + Math.random()} // добавляем уникальность, так как раньше id повторялись
+            key={product.id + Math.random()}
             product={product}
             isExpanded={expandedId === product.id}
             onToggle={() =>

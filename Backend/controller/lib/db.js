@@ -15,7 +15,6 @@ async function handleKLN(chatId, username, firstName, lastName) {
     const res = await pool.query("SELECT * FROM public.users WHERE chat_id = $1", [chatId]);
 
     if (res.rows.length === 0) {
-      // Человека нет — добавим
       await pool.query(
         "INSERT INTO public.users (chat_id, username, first_name, last_name, registered_at) VALUES ($1, $2, $3, $4, NOW())",
         [chatId, username || null, firstName || null, lastName || null]

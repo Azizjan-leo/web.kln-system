@@ -12,9 +12,9 @@ function Header() {
         <Link to="/shop" className="nav-link">🛍 Магазин</Link>
         <Link to="/cart" className="nav-link">🛒 Корзина</Link>
         <Link to="/contact" className="nav-link">📞 Контакты</Link>
-        <Link to="/profile" className="nav-link"> Profile</Link>
+        <Link to="/profile" className="nav-link">🔑 Profile</Link>
       </nav>
-      <div className="auth-buttons">
+      <div className="auth-buttons">  
         <Link to="/login" className="nav-link login">🔑 Войти</Link>
         <Link to="/signup" className="nav-link signup">📝 Регистрация</Link>
       </div>
